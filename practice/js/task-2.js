@@ -1,13 +1,11 @@
-const randomUser =() =>{
-    fetch('https://randomuser.me/api/?results=50 ')
-    .then(res => res.json())
-    .then(data => loadUser(data.results))
-   
-}
-const loadUser = users =>{
- for( user of users){
-     console.log(user)
- }
+const randomUser = () => {
+  fetch("https://randomuser.me/api/?results=50 ")
+    .then((res) => res.json())
+    .then((data) => console.log(data.results));
+};
+loadUser();
+
+/* 
  const userDetails =document.getElementById('user-details');
  const div= document.createElement('div');
  div.classList.add('text-center')
@@ -22,8 +20,8 @@ const loadUser = users =>{
  
  `;
  
- userDetails.appendChild(div);
+ userDetails.ap pendChild(div);
   
 
 
-}
+ */
